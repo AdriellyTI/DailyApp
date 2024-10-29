@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Título da Tarefa -->
+    <TextView
+        android:id="@+id/textView_taskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Título da Tarefa"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Descrição da Tarefa -->
+    <TextView
+        android:id="@+id/textView_taskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descrição da tarefa"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_taskTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <!-- Tipo de Notificação -->
+    <TextView
+        android:id="@+id/textView_taskNotificationType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notificação"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_taskDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <!-- Cor da Tarefa -->
+    <TextView
+        android:id="@+id/textView_taskColor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cor"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView_taskNotificationType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyCadastro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/container"
+        style="@style/View_back"
+        android:layout_width="463dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/container"
+        tools:ignore="ExtraText" />
+
+    <TextView
+        android:id="@+id/tituloLogin"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif"
+        android:text="DailyApp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/Logo2"
+        android:layout_width="179dp"
+        android:layout_height="147dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Cadastro"
+        android:textColor="@color/dark_blue"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Logo2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Email"
+        android:textColor="@color/dark_blue"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/textCadastro"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/Edit_text"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/gray_black"
+        android:drawableRight="@drawable/ic_email"
+        android:hint="Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCadastro" />
+
+    <TextView
+        android:id="@+id/textcriarsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Criar senha"
+        android:textColor="@color/dark_blue"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_criar_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_criar_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        app:layout_constraintVertical_bias="0.868"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edit_criar_senha"
+        style="@style/Edit_text"
+        android:layout_width="362dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:drawableRight="@drawable/ic_eye"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/gray_black"
+        android:hint="Criar senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+    <TextView
+        android:id="@+id/textconfirmarsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Confirmar senha"
+        android:textColor="@color/dark_blue"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/edit_confirmar_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_confirmar_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_criar_senha"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/edit_confirmar_senha"
+            style="@style/Edit_text"
+            android:layout_width="362dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:drawableRight="@drawable/ic_eye"
+            android:hint="Confirmar senha"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="@color/gray_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_criar_senha" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/butto_entrar"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:minWidth="126dp"
+            android:minHeight="48dp"
+            android:text="Entrar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_confirmar_senha" />
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/google"
+            android:layout_width="216dp"
+            android:layout_height="60dp"
+            android:contentDescription="Sign in with Google"
+            app:layout_constraintBottom_toTopOf="@+id/text_possou_cadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butto_entrar"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text_possou_cadastro"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:fontFamily="serif"
+            android:onClick="openDailyCadastro"
+            android:padding="12dp"
+            android:text="Possui Cadastro"
+            android:textColor="@color/dark_blue"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/butto_entrar"
+            app:layout_constraintVertical_bias="0.893" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
